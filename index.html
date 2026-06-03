@@ -13,7 +13,7 @@
 <body>
   <header class="main-header">
     <img src="./assets/Screenshot 2026-04-07 104446.png" alt="">
-    <ol>
+    <ol class="disapper">
       <li class="navbar thick">
         <div class="menu-vehicle box">
           <a href="#vehicle">Vehicles</a>
@@ -343,9 +343,59 @@
         <i class="fa-regular fa-circle-user" style="color: rgb(6, 0, 0);"></i>
       </div>
     </div>
+    <div class="menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+      <button class="btn">menu</button>
+    </div>
+    <div class="offcanvas offcanvas-start measur" tabindex="-1" id="sidebar">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Vehicles
+            <i class="bi bi-chevron-right">></i>
+          </li>
+
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Energy
+            <i class="bi bi-chevron-right">></i>
+          </li>
+
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Charging
+            <i class="bi bi-chevron-right">></i>
+          </li>
+
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Discover
+            <i class="bi bi-chevron-right">></i>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Shop
+            <i class="bi bi-chevron-right"></i>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Support
+            <i class="bi bi-chevron-right"></i>
+          </li>
+        </ul>
+        <div class="bottom-section">
+
+          <div class="menu-item">
+            🌐 United States <span class="menu-icon"> ›</span>
+          </div>
+          <div class="small-text">English</div>
+
+          <div class="menu-item mt-3">
+            👤 Account
+          </div>
+        </div>
+      </div>
   </header>
 
-<!-- Carousel Cards -->
+
+  <!-- Carousel Cards -->
   <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -513,139 +563,137 @@
   <!-- CARD -->
 
   <div class="container-fluid offers-section my-0">
-  <div class="row g-4">
+    <div class="row g-4">
 
-   <!-- C-1 -->
-    <div class="col-md-6">
-      <div class="offer-card d-flex align-items-center justify-content-between">
-        
-        <div class="offer-text">
-          <h2>Current Offers</h2>
-          <p>Explore limited-time offers on Tesla vehicles.</p>
-          <button class="btn btn-light">Learn More</button>
+      <!-- C-1 -->
+      <div class="col-md-6">
+        <div class="offer-card d-flex align-items-center justify-content-between">
+
+          <div class="offer-text">
+            <h2>Current Offers</h2>
+            <p>Explore limited-time offers on Tesla vehicles.</p>
+            <button class="btn btn-light">Learn More</button>
+          </div>
+
+          <div class="offer-img">
+            <img src="./assets/CardImg/Homepage-Grid-Current-Offers.avif" alt="">
+          </div>
+
         </div>
-
-        <div class="offer-img">
-          <img src="./assets/CardImg/Homepage-Grid-Current-Offers.avif" alt="">
-        </div>
-
       </div>
-    </div>
-    <!-- C-2 -->
-    <div class="col-md-6">
-      <div class="offer-card d-flex align-items-center justify-content-between">
-        
-        <div class="offer-text">
-          <h2>American Heroes</h2>
-          <p>$500 off for military, first responders, healthcare, teachers and students.</p>
-          <button class="btn btn-light-1">Learn More</button>
-        </div>
+      <!-- C-2 -->
+      <div class="col-md-6">
+        <div class="offer-card d-flex align-items-center justify-content-between">
 
-        <div class="offer-img">
-          <img src="./assets/CardImg/Homepage-Grid-American-Heroes-v2.avif" alt="">
-        </div>
+          <div class="offer-text">
+            <h2>American Heroes</h2>
+            <p>$500 off for military, first responders, healthcare, teachers and students.</p>
+            <button class="btn btn-light-1">Learn More</button>
+          </div>
 
+          <div class="offer-img">
+            <img src="./assets/CardImg/Homepage-Grid-American-Heroes-v2.avif" alt="">
+          </div>
+
+        </div>
       </div>
-    </div>
 
+    </div>
   </div>
-</div>
   <!-- under Card -->
-   <div class="main-card-1">
+  <div class="main-card-1">
     <div class="card main-card card-changes">
-        <img src="./assets/TwoCard/Homepage-FSD-Safety-Report-Split-Desktop.avif" alt="">
-        <div class="overlay">
+      <img src="./assets/TwoCard/Homepage-FSD-Safety-Report-Split-Desktop.avif" alt="">
+      <div class="overlay">
 
-          <h1>Travel Safer, Arrive Refresher</h1>
-          <p class="pcls-1">Self-Driving(Supervised)</p>
-          <div class="btn-wrapper-vehiclecard">
-            <div class="btn-group">
-              <button class="btn btn-primary">Demo DFS<br>(Supervised)</button>
-            </div>
-            <div class="btn-group">
-              <button class="btn btn-light">Learn More</button>
-            </div>
+        <h1>Travel Safer, Arrive Refresher</h1>
+        <p class="pcls-1">Self-Driving(Supervised)</p>
+        <div class="btn-wrapper-vehiclecard">
+          <div class="btn-group">
+            <button class="btn btn-primary">Demo DFS<br>(Supervised)</button>
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-light">Learn More</button>
           </div>
         </div>
       </div>
-      <!-- L-2 -->
-      <div class="card main-card card-changes-1">
-        <img src="./assets/TwoCard/Homepage-Features-Desktop.avif" alt="">
-        <div class="overlay">
-          <h1>Features That Comes Standard </h1>
-          <div class="btn-wrapper-vehiclecard">
-            <div class="btn-group">
-              <button class="btn btn-primary">Discover</button>
-            </div>
+    </div>
+    <!-- L-2 -->
+    <div class="card main-card card-changes-1">
+      <img src="./assets/TwoCard/Homepage-Features-Desktop.avif" alt="">
+      <div class="overlay">
+        <h1>Features That Comes Standard </h1>
+        <div class="btn-wrapper-vehiclecard">
+          <div class="btn-group">
+            <button class="btn btn-primary">Discover</button>
           </div>
         </div>
       </div>
-      </div>
-
-<!-- MAP -->
-        <div class="test"></div>
-     <div class="map-container">
-  <iframe 
-    src="https://www.google.com/maps?q=tesla showroom Hyderabad&output=embed">
-  </iframe>
-
-  <a href="https://www.google.com/maps/search/tesla+showroom/@17.3961221,78.4519471,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQxMi4wIKXMDSoASAFQAw%3D%3D" 
-     target="_blank" 
-     class="map-link">
-  </a>
-</div>
-<div class="test-1"></div>
-<div class="container-fluid charge-section py-2 box-decoration">
-  <div class="row align-items-center box-decoration">
-
-    <!-- LEFT CONTENT -->
-    <div class="col-md-7">
-      <h1 class="fw-bold">Find Your Charge</h1>
-      <p class="text-muted">
-        View the network of Tesla Superchargers and Destination Chargers available near you.
-      </p>
-
-      <div class="mt-4">
-        <button class="btn btn-dark me-3 px-4">View Network</button>
-        <button class="btn btn-light px-4">Learn More</button>
-      </div>
     </div>
-
-    <!-- RIGHT STATS -->
-    <div class="col-md-5 text-md-end mt-4 mt-md-0">
-      <div class="d-flex justify-content-md-end gap-5 flex-wrap">
-
-        <!-- Superchargers -->
-        <div class="stat-box">
-          <h2 class="fw-bold">
-            36,746 
-            <span class="icon red">⚡</span>
-          </h2>
-          <p class="text-muted">Superchargers</p>
-        </div>
-
-        <!-- Destination Chargers -->
-        <div class="stat-box">
-          <h2 class="fw-bold">
-            6,620 
-            <span class="icon gray">🔌</span>
-          </h2>
-          <p class="text-muted">Destination Chargers</p>
-        </div>
-
-      </div>
-    </div>
-
   </div>
-</div>
+
+  <!-- MAP -->
+  <div class="test"></div>
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps?q=tesla showroom Hyderabad&output=embed">
+    </iframe>
+
+    <a href="https://www.google.com/maps/search/tesla+showroom/@17.3961221,78.4519471,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDQxMi4wIKXMDSoASAFQAw%3D%3D"
+      target="_blank" class="map-link">
+    </a>
+  </div>
+  <div class="test-1"></div>
+  <div class="container-fluid charge-section py-2 box-decoration">
+    <div class="row align-items-center box-decoration">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-md-7">
+        <h1 class="fw-bold">Find Your Charge</h1>
+        <p class="text-muted">
+          View the network of Tesla Superchargers and Destination Chargers available near you.
+        </p>
+
+        <div class="mt-4">
+          <button class="btn btn-dark me-3 px-4">View Network</button>
+          <button class="btn btn-light px-4">Learn More</button>
+        </div>
+      </div>
+
+      <!-- RIGHT STATS -->
+      <div class="col-md-5 text-md-end mt-4 mt-md-0">
+        <div class="d-flex justify-content-md-end gap-5 flex-wrap">
+
+          <!-- Superchargers -->
+          <div class="stat-box">
+            <h2 class="fw-bold">
+              36,746
+              <span class="icon red">⚡</span>
+            </h2>
+            <p class="text-muted">Superchargers</p>
+          </div>
+
+          <!-- Destination Chargers -->
+          <div class="stat-box">
+            <h2 class="fw-bold">
+              6,620
+              <span class="icon gray">🔌</span>
+            </h2>
+            <p class="text-muted">Destination Chargers</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 
-<!-- Last Cards -->
-<div class="test"></div>
+  <!-- Last Cards -->
+  <div class="test"></div>
   <div class="carousel-wrapper">
 
     <div class="card-container">
-<!-- 1 -->
+      <!-- 1 -->
       <div class="card main-card">
         <img src="./assets/LastCards/Homepage-Card-Solar-Panels-Desktop-v2.avif">
         <div class="overlay">
@@ -661,11 +709,11 @@
           </div>
         </div>
       </div>
-<!--  2-->
+      <!--  2-->
       <div class="card main-card">
         <img src="./assets/LastCards/Homepage-Card-Powerwall-Desktop.avif" alt="">
         <div class="overlay">
-         
+
           <h1>PowerWall</h1>
           <p class="pcls-1">Keep Your Lights On During Outage</p>
           <div class="btn-wrapper-vehiclecard">
@@ -684,7 +732,7 @@
         <div class="overlay">
           <div class="btheight-luxury"></div>
           <h1>Megapack</h1>
-           <p class="pcls-1">Massive Battries for Massive Energy Support</p>
+          <p class="pcls-1">Massive Battries for Massive Energy Support</p>
           <div class="btn-wrapper-vehiclecard">
             <div class="btn-group">
               <button class="btn btn-primary">Learn More</button>
@@ -713,31 +761,35 @@
   </div>
   <!-- <div class="test"></div> -->
 
-<div  class="last-space">
-  <p style="color:#66676B;">
-1 Price reflects monthly subscription, subject to terms and conditions. Price and feature availability subject to change.</p>
-</div>
+  <div class="last-space">
+    <p style="color:#66676B;">
+      1 Price reflects monthly subscription, subject to terms and conditions. Price and feature availability subject to
+      change.</p>
+  </div>
 
   <div class="test"></div>
   <div class="top-bar text-center py-2">
-  <a href="#">Tesla © 2026</a>
-  <a href="#">Privacy & Legal</a>
-  <a href="#">Vehicle Recalls</a>
-  <a href="#">Contact</a>
-  <a href="#">News</a>
-  <a href="#">Get Updates</a>
-  <a href="#">Locations</a>
-  <a href="#">Learn</a>
-</div>
-
-<div class="test"></div>
-
-<div class="main-header-1">
-  <div class="last-container-1"><i class="fa-regular fa-message"></i>
-    <h7>Ask a Question</h7> <i class="fa-solid fa-arrow-up-from-bracket space"></i>
+    <a href="#">Tesla © 2026</a>
+    <a href="#">Privacy & Legal</a>
+    <a href="#">Vehicle Recalls</a>
+    <a href="#">Contact</a>
+    <a href="#">News</a>
+    <a href="#">Get Updates</a>
+    <a href="#">Locations</a>
+    <a href="#">Learn</a>
   </div>
-  <div class="last-container-2"><i class="fa-solid fa-car"></i> Schedule  a Drive Today</div>
-</div>
+
+  <div class="test"></div>
+
+ <div class="main-header-1">
+    <div class="last-container-1">
+        <i class="fa-regular fa-message"></i>
+        <input type="text" placeholder="Ask a Question" class="question-box">
+    </div>
+    <div class="last-container-2">
+      <i class="fa-solid fa-car">
+      </i> Schedule a Drive Today</div>
+  </div>
 
 
   <script src="https://kit.fontawesome.com/864b45d551.js" crossorigin="anonymous"></script>
